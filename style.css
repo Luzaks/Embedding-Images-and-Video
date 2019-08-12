@@ -39,20 +39,26 @@ p {
 }
 
 /*
-.video-bar div{
-    position: absolute;
 
-}
 
 .video-buttoms{
     width: 40px;
 }
 */
+
+.video-bar{
+    width:660px;
+}
 .video-bar img{
 
     width:40px;
     height: 40px;
 }
+
+.buttons-x{
+    width: 660px;
+}
+
 .buttons-x div{
     width: 100px;
     height: 100px;
@@ -69,19 +75,20 @@ p {
 }
 
 #like-icon{
-    right: 120px;
+    left: 530px;
 }
 
 #dislike{
-    right: 60px;
+    left: 575px;
 }
 
 #share-buttom{
-    right: 0px;
+    left: 620px;
 }
 
 #subscribe-buttom{
     position: absolute;
+    top: 0px;
     left: 40px;
     width: 40px;
     height: 40px;
@@ -92,4 +99,31 @@ p {
     left: 50px;
     width: 40px;
     height: 40px;
+}
+ .video-content{
+     width:660px;
+     height: 415px;
+ }
+
+ #video{
+     width:660px;
+     height: 415px;
+ }
+
+.sidebar{
+    position: absolute;
+    left: 675px;
+    width: 300px;
+    height: %100;
+    top: 53px;
+    overflow-y: auto;
+
+}
+
+
+.explenation {
+    position: relative;
+    left: 155px;
+    top: -110px;
+    width: 50px;
 }
