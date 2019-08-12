@@ -37,15 +37,59 @@ p {
     font-size: 14px;
     font-weight: bold;
 }
+
+/*
 .video-bar div{
     position: absolute;
-   
+
 }
+
+.video-buttoms{
+    width: 40px;
+}
+*/
 .video-bar img{
- 
+
     width:40px;
     height: 40px;
 }
-.video-buttoms{
-    align-self: auto;
+.buttons-x div{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.user-panel-x{
+    top :60px;
+    position:relative;
+}
+
+#views{
+    left:0px;
+}
+
+#like-icon{
+    right: 120px;
+}
+
+#dislike{
+    right: 60px;
+}
+
+#share-buttom{
+    right: 0px;
+}
+
+#subscribe-buttom{
+    position: absolute;
+    left: 40px;
+    width: 40px;
+    height: 40px;
+}
+
+#user-icon{
+    top: 60px;
+    left: 50px;
+    width: 40px;
+    height: 40px;
 }
