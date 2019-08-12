@@ -32,3 +32,20 @@
 #search-button{
     right:0px;
 }
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+    font-size: 14px;
+    font-weight: bold;
+}
+.video-bar div{
+    position: absolute;
+   
+}
+.video-bar img{
+ 
+    width:40px;
+    height: 40px;
+}
+.video-buttoms{
+    align-self: auto;
+}
