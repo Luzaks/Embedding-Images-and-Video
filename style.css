@@ -95,7 +95,7 @@ p {
 }
 
 #user-icon{
-    
+
     top: 60px;
     left: 50px;
     width: 40px;
@@ -107,7 +107,7 @@ p {
     top: -60px;
     width: 200px;
     height: 200px;
-   
+
 }
 .date {
     color: gray;
@@ -124,7 +124,7 @@ p {
     position: relative;
     left: 0px;
     top: 150px;
-    
+
 }
 textarea {
     width: 500px;
@@ -154,6 +154,11 @@ textarea {
 
 }
 
+.comment{
+    width: 500px;
+    height: 100px;
+    overflow-x: auto;
+}
 
 .explenation {
     position: relative;
