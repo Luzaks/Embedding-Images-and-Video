@@ -70,16 +70,17 @@ p {
 
 .buttons-x{
     width: 660px;
+    height: 100px;
 }
 
 .buttons-x div{
+    margin-left: 110px;
     width: 100px;
     height: 100px;
     position: absolute;
 }
 
 .user-panel-x{
-    top :60px;
     position:relative;
 }
 
@@ -150,6 +151,7 @@ textarea {
  .video-content{
      width:660px;
      height: 415px;
+     margin-left: 100px;
  }
 
  #video{
