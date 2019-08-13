@@ -6,23 +6,36 @@
 .rightmost-icons img{
     width:40px;
     height: 40px;
-
+    background: white;
 }
 .search-bar{
     position: absolute;
-    top: 0;
-    left: 45%;
+    top: 10px;
+    left: 40%;
 }
 
+#search-text{
+    width: 200px;
+    height: 25px;
+}
+
+.search-form{
+    position: relative;
+    top:-5px;
+}
 .rightmost-icons{
     position: absolute;
-    top: 0 ;
-    right: 0;
+    top:10px ;
+    right: 10px;
 }
-
+.search-form button{
+    position: relative;
+    top:5px;
+}
 #search-img{
-    width: 20px;
-    height: 20px;
+    position: relative;
+    width: 25px;
+    height: 25px;
 }
 #logo-img{
     width:40px;
@@ -75,21 +88,21 @@ p {
 }
 
 #like-icon{
-    left: 530px;
+    left: 520px;
 }
 
 #dislike{
-    left: 575px;
+    left: 565px;
 }
 
 #share-buttom{
-    left: 620px;
+    left: 610px;
 }
 
 #subscribe-buttom{
     position: absolute;
     top: 0px;
-    left: 620px;
+    left: 602px;
     width: 40px;
     height: 40px;
 }
@@ -148,7 +161,7 @@ textarea {
     position: absolute;
     left: 675px;
     width: 300px;
-    height: %100;
+    height: 1200px;
     top: 53px;
     overflow-y: auto;
 
@@ -165,4 +178,12 @@ textarea {
     left: 155px;
     top: -110px;
     width: 50px;
+}
+
+body{background-color: black;
+    font
+}
+
+p{
+    color:white;
 }
