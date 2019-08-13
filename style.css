@@ -159,7 +159,7 @@ textarea {
 
 .sidebar{
     position: absolute;
-    left: 675px;
+    right: 0px;
     width: 320px;
     height: 1200px;
     top: 65px;
@@ -183,14 +183,10 @@ textarea {
     width: 50px;
 }
 
-body{background-color: black;
-    width: 1024px;
-    height: 768px;
+body{
+    background-color: black;
 }
-html{
-    width: 1024px;
-    height: 768px;
-}
+
 p{
     color:white;
 }
