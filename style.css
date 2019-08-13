@@ -95,10 +95,44 @@ p {
 }
 
 #user-icon{
+    
     top: 60px;
     left: 50px;
     width: 40px;
     height: 40px;
+}
+#Username{
+    position: relative;
+    left: 50px;
+    top: -60px;
+    width: 200px;
+    height: 200px;
+   
+}
+.date {
+    color: gray;
+    font-size: 12px;
+}
+#description{
+    position: relative;
+    left: 0px;
+    top: -200px;
+    width: 500px;
+    height: 500px;
+}
+#comments{
+    position: relative;
+    left: 0px;
+    top: 150px;
+    
+}
+textarea {
+    width: 500px;
+    height: 100px;
+}
+#words{
+    font-size: 10px;
+    color: gray;
 }
  .video-content{
      width:660px;
