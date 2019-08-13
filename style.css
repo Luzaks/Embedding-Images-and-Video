@@ -162,11 +162,14 @@ textarea {
     left: 675px;
     width: 300px;
     height: 1200px;
-    top: 53px;
+    top: 65px;
     overflow-y: auto;
 
 }
-
+.side-element{
+    width: 300px;
+    height: 130px;
+}
 .comment{
     width: 500px;
     height: 100px;
