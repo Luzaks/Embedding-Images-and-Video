@@ -187,7 +187,10 @@ body{background-color: black;
     width: 1024px;
     height: 768px;
 }
-
+html{
+    width: 1024px;
+    height: 768px;
+}
 p{
     color:white;
 }
