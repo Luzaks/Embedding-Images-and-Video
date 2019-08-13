@@ -160,7 +160,7 @@ textarea {
 .sidebar{
     position: absolute;
     left: 675px;
-    width: 300px;
+    width: 320px;
     height: 1200px;
     top: 65px;
     overflow-y: auto;
@@ -184,7 +184,8 @@ textarea {
 }
 
 body{background-color: black;
-    font
+    width: 1024px;
+    height: 768px;
 }
 
 p{
