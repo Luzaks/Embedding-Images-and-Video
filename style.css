@@ -1,9 +1,5 @@
-.frame-border {
-    frameborder: 0;
-}
-
 .logo {
-    left: 0%;
+    left: 0;
     width: 40px;
 }
 
@@ -52,7 +48,7 @@
 }
 
 #search-button {
-    right: 0px;
+    right: 0;
 }
 
 p {
