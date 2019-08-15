@@ -2,4 +2,4 @@
 linters:
   stylelint:
     config: 'stylelint.config.js'
-    fixer: true
+    ignore: 'function-whitespace-after,function-parentheses-space-inside,function-comma-space-before,function-comma-space-after,color-hex-case'
