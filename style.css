@@ -1,198 +1,199 @@
-
-.frame-border{
+.frame-border {
     frameborder:0;
 }
-.logo{
+
+.logo {
     left: 0%;
     width:40px;
 }
 
-.rightmost-icons img{
+.rightmost-icons img {
     width:40px;
     height: 40px;
     background: white;
 }
-.search-bar{
+
+.search-bar {
     position: absolute;
     top: 10px;
     left: 40%;
 }
 
-#search-text{
+#search-text {
     width: 200px;
     height: 25px;
 }
 
-.search-form{
+.search-form {
     position: relative;
     top:-5px;
 }
-.rightmost-icons{
+
+.rightmost-icons {
     position: absolute;
     top:10px ;
     right: 10px;
 }
-.search-form button{
+
+.search-form button {
     position: relative;
     top:5px;
 }
-#search-img{
+
+#search-img {
     position: relative;
     width: 25px;
     height: 25px;
 }
-#logo-img{
+
+#logo-img {
     width:40px;
     height: 40px;
 }
 
-#search-button{
+#search-button {
     right:0px;
 }
-p {
+
+p  {
     font-family: 'Lucida Sans', 'Lucida Sans Regular';
     font-size: 14px;
     font-weight: bold;
 }
 
-/*
-
-
-.video-buttoms{
-    width: 40px;
-}
-*/
-
-.video-bar{
+.video-bar {
     width:660px;
 }
-.video-bar img{
 
+.video-bar img {
     width:40px;
     height: 40px;
 }
 
-.buttons-x{
+.buttons-x {
     width: 660px;
     height: 100px;
 }
 
-.buttons-x div{
+.buttons-x div {
     margin-left: 110px;
     width: 100px;
     height: 100px;
     position: absolute;
 }
 
-.user-panel-x{
+.user-panel-x {
     position:relative;
 }
 
-#views{
-    left:0px;
+#views {
+    left:0;
 }
 
-#like-icon{
+#like-icon {
     left: 520px;
 }
 
-#dislike{
+#dislike {
     left: 565px;
 }
 
-#share-buttom{
+#share-buttom {
     left: 610px;
 }
 
-#subscribe-buttom{
+#subscribe-buttom {
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 602px;
     width: 40px;
     height: 40px;
 }
 
-#user-icon{
-
+#user-icon {
     top: 60px;
     left: 50px;
     width: 40px;
     height: 40px;
 }
-#Username{
+
+#Username {
     position: relative;
     left: 50px;
     top: -60px;
     width: 200px;
     height: 200px;
-
 }
-.date {
+.date  {
     color: gray;
     font-size: 12px;
 }
-#description{
+
+#description {
     position: relative;
     left: 0px;
     top: -200px;
     width: 500px;
     height: 500px;
 }
-#comments{
+#comments {
     position: relative;
-    left: 0px;
+    left: 0;
     top: 150px;
-
 }
-textarea {
+
+textarea  {
     width: 500px;
     height: 100px;
 }
-#words{
+
+#words {
     font-size: 10px;
     color: gray;
 }
- .video-content{
+
+ .video-content {
      width:660px;
      height: 415px;
      margin-left: 100px;
  }
 
- #video{
+ #video {
      width:660px;
      height: 415px;
  }
 
-.sidebar{
+.sidebar {
     position: absolute;
     right: 0px;
     width: 320px;
     height: 1200px;
     top: 65px;
     overflow-y: auto;
-
 }
-.side-element{
+
+.side-element {
     width: 300px;
     height: 130px;
 }
-.comment{
+
+.comment {
     width: 500px;
     height: 100px;
     overflow-x: auto;
 }
 
-.explenation {
+.explenation  {
     position: relative;
     left: 155px;
     top: -110px;
     width: 50px;
 }
 
-body{
+body {
     background-color: black;
 }
 
-p{
+p {
     color:white;
 }
