@@ -1,14 +1,14 @@
 .frame-border {
-    frameborder:0;
+    frameborder: 0;
 }
 
 .logo {
     left: 0%;
-    width:40px;
+    width: 40px;
 }
 
 .rightmost-icons img {
-    width:40px;
+    width: 40px;
     height: 40px;
     background: white;
 }
@@ -37,7 +37,7 @@
 
 .search-form button {
     position: relative;
-    top:5px;
+    top: 5px;
 }
 
 #search-img {
@@ -47,12 +47,12 @@
 }
 
 #logo-img {
-    width:40px;
+    width: 40px;
     height: 40px;
 }
 
 #search-button {
-    right:0px;
+    right: 0px;
 }
 
 p {
@@ -62,11 +62,11 @@ p {
 }
 
 .video-bar {
-    width:660px;
+    width: 660px;
 }
 
 .video-bar img {
-    width:40px;
+    width: 40px;
     height: 40px;
 }
 
@@ -83,11 +83,11 @@ p {
 }
 
 .user-panel-x {
-    position:relative;
+    position: relative;
 }
 
 #views {
-    left:0;
+    left: 0;
 }
 
 #like-icon {
@@ -153,13 +153,13 @@ textarea {
 }
 
  .video-content {
-     width:660px;
+     width: 660px;
      height: 415px;
      margin-left: 100px;
  }
 
  #video {
-     width:660px;
+     width: 660px;
      height: 415px;
  }
 
@@ -195,5 +195,5 @@ body {
 }
 
 p {
-    color:white;
+    color: white;
 }
