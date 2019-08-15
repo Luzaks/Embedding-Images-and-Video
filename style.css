@@ -55,7 +55,7 @@
     right:0px;
 }
 
-p  {
+p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular';
     font-size: 14px;
     font-weight: bold;
@@ -124,7 +124,7 @@ p  {
     width: 200px;
     height: 200px;
 }
-.date  {
+.date {
     color: gray;
     font-size: 12px;
 }
@@ -142,7 +142,7 @@ p  {
     top: 150px;
 }
 
-textarea  {
+textarea {
     width: 500px;
     height: 100px;
 }
@@ -183,7 +183,7 @@ textarea  {
     overflow-x: auto;
 }
 
-.explenation  {
+.explenation {
     position: relative;
     left: 155px;
     top: -110px;
