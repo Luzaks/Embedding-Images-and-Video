@@ -63,7 +63,7 @@ module.exports = {
     "function-parentheses-newline-inside": "always-multi-line",
     "function-parentheses-space-inside": "never-single-line",
     "function-whitespace-after": "always",
-    "length-zero-no-unit": true,
+    "length-zero-no-unit": "false",
     "max-empty-lines": 1,
     "media-feature-colon-space-after": "always",
     "media-feature-colon-space-before": "never",
@@ -79,10 +79,10 @@ module.exports = {
     "number-leading-zero": "always",
     "number-no-trailing-zeros": true,
     "property-case": "lower",
-    "rule-empty-line-before": [ "always-multi-line", {
+    /*"rule-empty-line-before": [ "always-multi-line", {
       except: ["first-nested"],
       ignore: ["after-comment"],
-    } ],
+    } ],*/
     "selector-attribute-brackets-space-inside": "never",
     "selector-attribute-operator-space-after": "never",
     "selector-attribute-operator-space-before": "never",

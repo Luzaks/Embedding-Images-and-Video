@@ -55,6 +55,7 @@ p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular';
     font-size: 14px;
     font-weight: bold;
+    color: white;
 }
 
 .video-bar {
@@ -176,7 +177,7 @@ textarea {
 .comment {
     width: 500px;
     height: 100px;
-    overflow-x: auto;
+code    overflow-x: auto;
 }
 
 .explenation {
@@ -188,8 +189,4 @@ textarea {
 
 body {
     background-color: black;
-}
-
-p {
-    color: white;
 }
