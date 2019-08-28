@@ -10,12 +10,12 @@ https://www.theodinproject.com/courses/html5-and-css3/lessons/embedding-images-a
 
 ### SS 1&2 :
 
-* ![alt text](https://ibb.co/qnFKD8n "Screen Shot -1")
+* ![alt text](https://i.ibb.co/j5Zm8Y5/ss1.png "Screen Shot -1")
 
 
 
 
-* ![alt text](https://ibb.co/R6v6xZy "Screen Shot -2")
+* ![alt text](https://i.ibb.co/B6z6XdN/ss2.png "Screen Shot -2")
 
 
 
