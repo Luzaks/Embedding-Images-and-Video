@@ -1,17 +1,19 @@
 body{
+    width: 1349px;
     margin: 0;
+    background-color: #1f1f1f;
 }
 .nav-bar{
-    width: 100%;
-    height: 47px;
+    width: 1349px;
+    height: 56px;
     margin: 0;
-    background-color: white;
+    background-color: #272727;
 }
 .logo {
     float: left;
     left: 0;
-    width: 40px;
-    background-color: white;
+    width: 56px;
+    height: 56px;
 }
 
 .rightmost-icons img {
@@ -21,19 +23,29 @@ body{
     margin-top: 0;
 }
 
+.search-form{
+    width: 690px;
+    height: 50px;
+}
+
 .search-bar {
     margin: 0 auto;
     width: 562px;
-    height: 42px;
+    height: 47px;
     position: relative;
 }
 
 #search-text {
     position:relative;
     width: 90%;
-    height: 24px;
+    height: 27px;
     margin-right: -5px;
     top: 10px;
+    background-color: black;
+    border-width: 0.5px;
+    border-color:gray;
+    border-radius: 1px;
+    border-style: solid;
 }
 
 .rightmost-icons {
@@ -44,24 +56,36 @@ body{
 
 .searchbutton{
     float: right;
+    width: 65px;
+    height: 28px;
     border: 0;
-    margin: auto 0;
+    position: relative;
+    border: 1px #383838 solid;
+    top: 10px;
+    padding: 0;
+    background-color: #383838;
 }
 
 #search-img {
-    position: relative;
-    width: 25px;
-    height: 25px;
+    width: 24px;
+    height: 28px;
+    margin: 0 auto;
 }
 
 #logo-img {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 47px;
+    height: 47px;
+    fill: white;
 }
 
-#search-button {
-    right: 0;
+.search-button {
+    display: block;
+    width: 24px;
+    height: 28px;
+    padding: 0;
+    margin: 0 auto;
+    background-color: #383838;
+    border: 0;
 }
 
 p {
@@ -202,8 +226,4 @@ textarea {
     left: 155px;
     top: -110px;
     width: 50px;
-}
-
-body {
-    background-color: black;
 }
