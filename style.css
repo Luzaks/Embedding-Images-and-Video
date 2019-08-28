@@ -1,5 +1,6 @@
 body{
     width: 1360px;
+    height: 1500px;
     margin: 0;
     background-color: #1f1f1f;
 }
@@ -29,8 +30,9 @@ body{
 }
 
 #search-text {
+    float:left;
     position:relative;
-    width: 90%;
+    width: 83%;
     height: 27px;
     margin-right: -7px;
     top: 10px;
@@ -46,8 +48,8 @@ body{
     top: 10px;
     right: 10px;
     margin: 0;
-    padding: 0;
-    width: 200px;
+    padding: 0 0 0 50px;
+    width: 250px;
     height: 56px;
 }
 
@@ -55,15 +57,15 @@ body{
     fill: white;
     width: 24px;
     height: 24px;
-    margin: 0;
+    margin: 0 20px 0 0;
     padding: 0;
     position: relative;
     top: 0;
 }
 
 .rightmost-icons img{
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     margin: 0;
     padding: 0;
     position: relative;
@@ -72,7 +74,7 @@ body{
 }
 
 .searchbutton{
-    float: right;
+    float: left;
     width: 65px;
     height: 28px;
     border: 0;
@@ -105,6 +107,28 @@ body{
     border: 0;
 }
 
+.frameborder{
+    border:0;
+    float:left;
+}
+
+.video-content p{
+    clear:left;
+    height: 20px;
+}
+.video-bar{
+    clear:both;
+    width: 875px;
+    height: 500px;
+}
+
+.video-buttoms{
+    width: 40px;
+    height: 40px;
+    float: right;
+    margin-left: 30px;
+}
+
 p {
     font-family: 'Lexend Mega', sans-serif;
     font-size: 14px;
@@ -112,54 +136,31 @@ p {
     color: white;
 }
 
-.video-bar {
-    width: 660px;
-}
 
 .video-bar img {
     width: 40px;
     height: 40px;
+
 }
 
 .buttons-x {
-    width: 660px;
-    height: 100px;
+    width: 872px;
+    height: 60px;
+    border-bottom:1px gray solid;
+    margin-bottom: 30px;
 }
 
-.buttons-x div {
-    margin-left: 110px;
-    width: 100px;
-    height: 100px;
-    position: absolute;
+#views{
+    float:left;
+    height: 40px;
+    width: 200px;
 }
 
 .user-panel-x {
     position: relative;
+    clear: left;
 }
 
-#views {
-    left: 0;
-}
-
-#like-icon {
-    left: 520px;
-}
-
-#dislike {
-    left: 565px;
-}
-
-#share-buttom {
-    left: 610px;
-}
-
-#subscribe-buttom {
-    position: absolute;
-    top: 0;
-    left: 602px;
-    width: 40px;
-    height: 40px;
-}
 
 #user-icon {
     top: 60px;
@@ -205,22 +206,23 @@ textarea {
 }
 
  .video-content {
-     width: 660px;
-     height: 415px;
-     margin-left: 100px;
+     float:left;
+     width: 900px;
+     height: 49 2px;
+     margin: 20px 0 0 30px;
  }
 
  #video {
-     width: 660px;
-     height: 415px;
+     width: 875px;
+     height: 492px;
  }
 
 .sidebar {
-    position: absolute;
-    right: 0px;
-    width: 320px;
+    float:left;
+    width: 390px;
     height: 1200px;
-    top: 65px;
+    position: relative;
+    top: 20px;
     overflow-y: auto;
 }
 
