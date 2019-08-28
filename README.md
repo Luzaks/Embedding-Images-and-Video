@@ -1,23 +1,25 @@
-First Project on Microverse: Embedding Images and Video in HTML&CSS
+# First Project on Microverse: Embedding Images and Video in HTML&CSS
 
-Example web site for project:
+### Example web site for project:
 
 https://www.youtube.com/watch?v=V74l_zS1x8E
 
-Full Task description of project:
+### Full Task description of project:
 
 https://www.theodinproject.com/courses/html5-and-css3/lessons/embedding-images-and-video
 
-SS 1&2 :
+### SS 1&2 :
 
-https://ibb.co/qnFKD8n
-
-
-https://ibb.co/R6v6xZy
+* ![alt text](https://ibb.co/qnFKD8n "Screen Shot -1")
 
 
 
-Description:
+
+* ![alt text](https://ibb.co/R6v6xZy "Screen Shot -2")
+
+
+
+### Description:
 
 We added a <nav> tag that wrapped the code for a image that represents the home button, and then an input for a search bar and another input for a search button, then some additional icons represented with images. We close the </nav> tag.
 
