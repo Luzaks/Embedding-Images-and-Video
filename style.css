@@ -1,10 +1,10 @@
 body{
-    width: 1349px;
+    width: 1360px;
     margin: 0;
     background-color: #1f1f1f;
 }
 .nav-bar{
-    width: 1349px;
+    width: 1360px;
     height: 56px;
     margin: 0;
     background-color: #272727;
@@ -16,13 +16,6 @@ body{
     height: 56px;
 }
 
-.rightmost-icons img {
-    width: 40px;
-    height: 40px;
-    background: white;
-    margin-top: 0;
-}
-
 .search-form{
     width: 690px;
     height: 50px;
@@ -30,7 +23,7 @@ body{
 
 .search-bar {
     margin: 0 auto;
-    width: 562px;
+    width: 690px;
     height: 47px;
     position: relative;
 }
@@ -39,7 +32,7 @@ body{
     position:relative;
     width: 90%;
     height: 27px;
-    margin-right: -5px;
+    margin-right: -7px;
     top: 10px;
     background-color: black;
     border-width: 0.5px;
@@ -52,6 +45,30 @@ body{
     float: right;
     top: 10px;
     right: 10px;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 56px;
+}
+
+.rightmost-icons svg{
+    fill: white;
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+}
+
+.rightmost-icons img{
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 7px;
+    border-radius: 100%;
 }
 
 .searchbutton{
