@@ -25,4 +25,4 @@ We added a <nav> tag that wrapped the code for a image that represents the home 
 
 We pass to the main section and added an embedded video player using the <iframe> tag followed by a block for video bar wrapped by a <div> wich includes paragraph with the video title then a block for video views, like, dislike and share buttons; another block for user id icon and user description; then we added the comments section wrapped by a <div> tag with a <textarea> for comments and a some comments.
 
-The last part is the <aside> tag it's content is in the right most part with recommended videos, thumbnails titles and views for each video.
+The last part is the "<aside>" tag it's content is in the right most part with recommended videos, thumbnails titles and views for each video.
