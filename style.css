@@ -1,4 +1,4 @@
-body{
+body {
     width: 1360px;
     height: 1420px;
     margin: 0;
@@ -9,12 +9,14 @@ body{
     letter-spacing: -1.5px;
     color: hsla(0, 0%, 100%, 0.88);
 }
-.nav-bar{
+
+.nav-bar {
     width: 1360px;
     height: 56px;
     margin: 0;
     background-color: #272727;
 }
+
 .logo {
     float: left;
     left: 0;
@@ -22,7 +24,7 @@ body{
     height: 56px;
 }
 
-.search-form{
+.search-form {
     width: 690px;
     height: 50px;
 }
@@ -35,21 +37,21 @@ body{
 }
 
 #search-text {
-    float:left;
-    position:relative;
+    float: left;
+    position: relative;
     width: 83%;
     height: 25px;
     margin-right: -7px;
     top: 10px;
     background-color: black;
     border-width: 0.5px;
-    border-color:gray;
+    border-color: gray;
     border-radius: 1px;
     border-style: solid;
     color: #ffffff;
 }
 
-input:focus{
+input:focus {
     outline: none;
 }
 
@@ -63,7 +65,7 @@ input:focus{
     height: 56px;
 }
 
-.rightmost-icons svg{
+.rightmost-icons svg {
     fill: white;
     width: 24px;
     height: 24px;
@@ -73,7 +75,7 @@ input:focus{
     top: 0;
 }
 
-.rightmost-icons img{
+.rightmost-icons img {
     width: 35px;
     height: 35px;
     margin: 0;
@@ -83,7 +85,7 @@ input:focus{
     border-radius: 100%;
 }
 
-.searchbutton{
+.searchbutton {
     float: left;
     width: 65px;
     height: 28px;
@@ -117,23 +119,24 @@ input:focus{
     border: 0;
 }
 
-.frameborder{
-    border:0;
-    float:left;
+.frameborder {
+    border: 0;
+    float: left;
     margin-bottom: 25px;
 }
 
-.video-content p{
-    clear:left;
+.video-content p {
+    clear: left;
     height: 20px;
 }
-.video-bar{
-    clear:both;
+
+.video-bar {
+    clear: both;
     width: 875px;
     height: 500px;
 }
 
-.video-buttoms{
+.video-buttoms {
     width: 40px;
     height: 40px;
     float: right;
@@ -143,12 +146,13 @@ input:focus{
     border: 0;
 }
 
-#options-buttom{
+#options-buttom {
     margin-right: 3px;
     margin-left: 15px;
 }
 
-.video-buttoms svg, .video-buttoms g{
+.video-buttoms svg,
+.video-buttoms g {
     width: 100%;
     height: 100%;
     border-radius: 100%;
@@ -157,7 +161,7 @@ input:focus{
     border: 0;
 }
 
-.video-buttoms button{
+.video-buttoms button {
     width: 34px;
     height: 34px;
     border-radius: 100%;
@@ -165,49 +169,55 @@ input:focus{
     border-color: transparent;
     background-color: #1f1f1f;
 }
-.vb1{
-    float:left;
-    margin-top:0;
+
+.vb1 {
+    float: left;
+    margin-top: 0;
     width: 140px;
     height: 30px
 }
 
-.vb1 p{
-    margin-top:7px;
+.vb1 p {
+    margin-top: 7px;
     font-size: 15px;
 }
 
-.vb2{
-    float:left;
-    margin-top:0;
+.vb2 {
+    float: left;
+    margin-top: 0;
     margin-left: 25px;
     width: 200px;
     height: 30px;
 }
-.vb3{
-    float:left;
+
+.vb3 {
+    float: left;
     width: 30px;
     height: 30px;
     margin: 0;
     padding: auto;
 }
+
 .vb3 svg {
     fill: #9b9b9b;
     width: 25px;
     height: 25px;
-    margin:2.5px;
+    margin: 2.5px;
 }
-.vb4{
-    float:left;
+
+.vb4 {
+    float: left;
     width: 80px;
     height: 30px;
     margin: 0 0 0 5px;
     padding: auto;
 }
+
 .vb4 p {
-    margin-top:7px;
+    margin-top: 7px;
     color: #9b9b9b;
 }
+
 p {
     font-family: 'Lexend Mega', sans-serif;
     font-size: 14px;
@@ -215,30 +225,29 @@ p {
     color: white;
 }
 
-
 .video-bar img {
     width: 40px;
     height: 40px;
-
 }
 
 .buttons-x {
     width: 872px;
     height: 60px;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     margin-bottom: 30px;
 }
 
-#views{
-    float:left;
+#views {
+    float: left;
     height: 40px;
     width: 200px;
-    margin-top:3px;
+    margin-top: 3px;
 }
 
 #views p {
     color: #aaaaaa;
 }
+
 .user-panel-x {
     position: relative;
     clear: left;
@@ -246,32 +255,32 @@ p {
     height: 720px;
 }
 
-
 .user-icon {
     top: 60px;
     left: 50px;
     width: 872px;
     height: 260px;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-    margin-bottom:20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
 }
 
-.user-icon img{
+.user-icon img {
     float: left;
     width: 50px;
     height: 50px;
     border-radius: 100%;
     border: 2px #1f1f1f solid;
 }
-#subscribe-buttom{
+
+#subscribe-buttom {
     float: right;
 }
 
-.subscribe-buttom{
+.subscribe-buttom {
     background-color: #CC0000;
     border-radius: 3px;
     color: #ffffff;
-    padding:auto;
+    padding: auto;
     margin: auto 4px;
     white-space: nowrap;
     font-size: 0.9rem;
@@ -280,13 +289,13 @@ p {
     text-transform: uppercase;
     display: flex;
     flex-direction: row;
-    border-width:0;
+    border-width: 0;
     width: 145px;
     height: 36px;
 }
 
-.span-in-button{
-    margin:auto;
+.span-in-button {
+    margin: auto;
 }
 
 #Username {
@@ -296,9 +305,11 @@ p {
     padding-top: 10px;
     padding-left: 10px;
 }
-#Username p{
+
+#Username p {
     margin-top: 0;
-    }
+}
+
 .date {
     color: gray;
     font-size: 12px;
@@ -311,7 +322,7 @@ p {
     padding: 20px 0 0 60px;
 }
 
-#description p{
+#description p {
     width: 812px;
     height: 160px;
     margin: 0;
@@ -324,7 +335,7 @@ p {
     overflow: hidden;
 }
 
-.comment-img{
+.comment-img {
     float: left;
     width: 50px;
     height: 50px;
@@ -338,12 +349,12 @@ textarea {
     height: 17px;
     background-color: transparent;
     border: 0;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     color: #ffffff;
     margin-top: 10px;
 }
 
-textarea:focus{
+textarea:focus {
     outline: none;
 }
 
@@ -352,24 +363,24 @@ textarea:focus{
     color: gray;
 }
 
- .video-content {
-     float:left;
-     width: 900px;
-     height: 1340px;
-     margin: 20px 0 0 30px;
- }
+.video-content {
+    float: left;
+    width: 900px;
+    height: 1340px;
+    margin: 20px 0 0 30px;
+}
 
- #video {
-     width: 875px;
-     height: 492px;
- }
+#video {
+    width: 875px;
+    height: 492px;
+}
 
- #video p {
-     margin-bottom: 0;
- }
+#video p {
+    margin-bottom: 0;
+}
 
 .sidebar {
-    float:left;
+    float: left;
     width: 390px;
     height: 1340px;
     position: relative;
@@ -388,7 +399,7 @@ textarea:focus{
     height: 100px;
 }
 
-.comments-2{
+.comments-2 {
     float: left;
     overflow-y: scroll;
     width: 500px;
