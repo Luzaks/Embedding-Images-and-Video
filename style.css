@@ -1,6 +1,6 @@
 body{
     width: 1360px;
-    height: 1500px;
+    height: 1263px;
     margin: 0;
     background-color: #1f1f1f;
     font-size: 1rem;
@@ -238,11 +238,11 @@ p {
     position: relative;
     clear: left;
     width: 872px;
-    height: 957px;
+    height: 720px;
 }
 
 
-#user-icon {
+.user-icon {
     top: 60px;
     left: 50px;
     width: 872px;
@@ -251,7 +251,7 @@ p {
     margin-bottom:20px;
 }
 
-#user-icon img{
+.user-icon img{
     float: left;
     width: 50px;
     height: 50px;
@@ -315,13 +315,31 @@ p {
 
 #comments {
     width: 872px;
-    height: 700px;
+    height: 450px;
     overflow: hidden;
 }
 
+.comment-img{
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 2px #1f1f1f solid;
+}
+
 textarea {
-    width: 500px;
-    height: 100px;
+    float: left;
+    width: 720px;
+    height: 17px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+textarea:focus{
+    outline: none;
 }
 
 #words {
@@ -332,7 +350,7 @@ textarea {
  .video-content {
      float:left;
      width: 900px;
-     height: 1500px;
+     height: 1207px;
      margin: 20px 0 0 30px;
  }
 
@@ -360,10 +378,18 @@ textarea {
 }
 
 .comment {
+    clear: left;
+    width: 554px;
+    height: 100px;
+}
+
+.comments-2{
+    float: left;
+    overflow-y: scroll;
     width: 500px;
     height: 100px;
-    overflow-y: scroll;
 }
+
 ::-webkit-scrollbar {
     display: none;
 }
