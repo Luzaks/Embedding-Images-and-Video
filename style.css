@@ -1,6 +1,6 @@
 body{
     width: 1360px;
-    height: 1263px;
+    height: 1420px;
     margin: 0;
     background-color: #1f1f1f;
     font-size: 1rem;
@@ -38,7 +38,7 @@ body{
     float:left;
     position:relative;
     width: 83%;
-    height: 27px;
+    height: 25px;
     margin-right: -7px;
     top: 10px;
     background-color: black;
@@ -46,6 +46,11 @@ body{
     border-color:gray;
     border-radius: 1px;
     border-style: solid;
+    color: #ffffff;
+}
+
+input:focus{
+    outline: none;
 }
 
 .rightmost-icons {
@@ -85,7 +90,7 @@ body{
     border: 0;
     position: relative;
     border: 1px #383838 solid;
-    top: 10px;
+    top: 9px;
     padding: 0;
     background-color: #383838;
 }
@@ -350,7 +355,7 @@ textarea:focus{
  .video-content {
      float:left;
      width: 900px;
-     height: 1207px;
+     height: 1340px;
      margin: 20px 0 0 30px;
  }
 
@@ -366,7 +371,7 @@ textarea:focus{
 .sidebar {
     float:left;
     width: 390px;
-    height: 1200px;
+    height: 1340px;
     position: relative;
     top: 20px;
     overflow-y: auto;
