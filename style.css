@@ -115,6 +115,7 @@ body{
 .frameborder{
     border:0;
     float:left;
+    margin-bottom: 25px;
 }
 
 .video-content p{
@@ -131,14 +132,20 @@ body{
     width: 40px;
     height: 40px;
     float: right;
+    margin-top: 12px;
     margin-left: 30px;
     border-radius: 100%;
     border: 0;
 }
 
+#options-buttom{
+    margin-right: 3px;
+    margin-left: 15px;
+}
+
 .video-buttoms svg, .video-buttoms g{
-    width: 38px;
-    height: 38px;
+    width: 100%;
+    height: 100%;
     border-radius: 100%;
     fill: #9b9b9b;
     background-color: transparent;
@@ -146,14 +153,56 @@ body{
 }
 
 .video-buttoms button{
-    width: 40px;
-    height: 40px;
+    width: 34px;
+    height: 34px;
     border-radius: 100%;
-    padding: 0;
+    padding: 4px;
     border-color: transparent;
     background-color: #1f1f1f;
 }
+.vb1{
+    float:left;
+    margin-top:0;
+    width: 140px;
+    height: 30px
+}
 
+.vb1 p{
+    margin-top:7px;
+    font-size: 15px;
+}
+
+.vb2{
+    float:left;
+    margin-top:0;
+    margin-left: 25px;
+    width: 200px;
+    height: 30px;
+}
+.vb3{
+    float:left;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: auto;
+}
+.vb3 svg {
+    fill: #9b9b9b;
+    width: 25px;
+    height: 25px;
+    margin:2.5px;
+}
+.vb4{
+    float:left;
+    width: 80px;
+    height: 30px;
+    margin: 0 0 0 5px;
+    padding: auto;
+}
+.vb4 p {
+    margin-top:7px;
+    color: #9b9b9b;
+}
 p {
     font-family: 'Lexend Mega', sans-serif;
     font-size: 14px;
@@ -171,7 +220,7 @@ p {
 .buttons-x {
     width: 872px;
     height: 60px;
-    border-bottom:1px gray solid;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
     margin-bottom: 30px;
 }
 
@@ -179,8 +228,12 @@ p {
     float:left;
     height: 40px;
     width: 200px;
+    margin-top:3px;
 }
 
+#views p {
+    color: #aaaaaa;
+}
 .user-panel-x {
     position: relative;
     clear: left;
@@ -193,7 +246,9 @@ p {
     top: 60px;
     left: 50px;
     width: 872px;
-    height: 300px;
+    height: 260px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    margin-bottom:20px;
 }
 
 #user-icon img{
@@ -209,18 +264,24 @@ p {
 
 .subscribe-buttom{
     background-color: #CC0000;
-    border-radius: 2px;
-    color: #FFFFFF;
-    padding:10px 16px;
-    margin: auto var(--ytd-subscribe-button-margin, 4px);
+    border-radius: 3px;
+    color: #ffffff;
+    padding:auto;
+    margin: auto 4px;
     white-space: nowrap;
-    font-size: 1.4rem;
-    font-weight: 500;
+    font-size: 0.9rem;
+    font-weight: bold;
     letter-spacing: .007px;
     text-transform: uppercase;
     display: flex;
     flex-direction: row;
+    border-width:0;
+    width: 145px;
+    height: 36px;
+}
 
+.span-in-button{
+    margin:auto;
 }
 
 #Username {
@@ -241,8 +302,8 @@ p {
 #description {
     clear: both;
     width: 822px;
-    height: 200px;
-    padding: 20px 0 20px 60px;
+    height: 180px;
+    padding: 20px 0 0 60px;
 }
 
 #description p{
@@ -271,13 +332,17 @@ textarea {
  .video-content {
      float:left;
      width: 900px;
-     height: 49 2px;
+     height: 1500px;
      margin: 20px 0 0 30px;
  }
 
  #video {
      width: 875px;
      height: 492px;
+ }
+
+ #video p {
+     margin-bottom: 0;
  }
 
 .sidebar {

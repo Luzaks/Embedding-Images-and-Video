@@ -56,35 +56,45 @@
         <div id="video-bar" class="video-bar">
         <div class="buttons-x">
           <div id="views"><p>2.155.562 views</p></div>
-          <div id="like-icon" class="video-buttoms">
-            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"><g>
-                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"></path>
-              </g></svg>
-          </div>
-
-          <div id="dislike" class="video-buttoms">
-            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"><g>
-                <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path>
-              </g></svg>
-          </div>
-          <div id="share-buttom" class="video-buttoms">
-              <form class="" action="index.html" method="post">
-                  <button type="submit">
-                    <svg viewBox="1 2 24 24" preserveAspectRatio="xMidYMid meet"><g>        
-                        <path d="M14 9V5l7 7-7 7v-4.1c-5 0-8.5 1.6-11 5.1 1-5 4-10 11-11z"></path>
-                      </g></svg>
-                  </button>
-              </form>
-          </div>
+          <div id="options-buttom" class="video-buttoms">
+                <button type="submit">
+                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false">
+                        <g>
+                            <circle cx="5" cy="12" r="2"></circle>
+                            <circle cx="12" cy="12" r="2"></circle>
+                            <circle cx="19" cy="12" r="2"></circle>
+                        </g>
+                    </svg>
+                </button>
+        </div>
           <div id="save-buttom" class="video-buttoms">
-            <form class="" action="index.html" method="post">
                 <button type="submit">
                     <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"><g>
                         <path d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z"></path>
                       </g></svg>
                 </button>
-            </form>
         </div>
+          <div id="share-buttom" class="video-buttoms">
+                  <button type="submit">
+                    <svg viewBox="1 2 24 24" preserveAspectRatio="xMidYMid meet"><g>
+                        <path d="M14 9V5l7 7-7 7v-4.1c-5 0-8.5 1.6-11 5.1 1-5 4-10 11-11z"></path>
+                      </g></svg>
+                  </button>
+          </div>
+          <div id="dislike" class="video-buttoms">
+              <button type="button" name="button">
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"><g>
+                <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path>
+              </g></svg>
+              </button>
+          </div>
+          <div id="like-icon" class="video-buttoms">
+            <button type="button" name="button">
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"><g>
+                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"></path>
+              </g></svg>
+            </button>
+          </div>
           </div>
           <div class="user-panel-x">
               <div id="user-icon">
@@ -92,7 +102,10 @@
                 <div id="subscribe-buttom">
                     <form class="" action="index.html" method="post">
                          <button class="subscribe-buttom" type="submit">
-                             <span>Subscribe</span>
+                             <div class="span-in-button">
+                                 <span>Subscribe</span>
+                                 <span>955K</span>
+                             </div>
                          </button>
                      </form>
                 </div>
@@ -103,7 +116,22 @@
                     This Github tutorial will cover the basics of how to use Github and the command line.</p></div>
 
               </div>
-              
+              <div class="vb1">
+                  <p>717 Comments</p>
+              </div>
+              <div class="vb2">
+                  <div class="video-buttoms vb3">
+                      <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false">
+                          <g>
+                              <path d="M3 18h6v-2H3v2zM3 6v2h18V6H3zm0 7h12v-2H3v2z"></path>
+                              <path d="M0 0h24v24H0z" fill="none"></path>
+                          </g>
+                      </svg>
+                  </div>
+                  <div class="video-buttoms vb4">
+                      <p>SORT BY</p>
+                  </div>
+              </div>
               <div id="comments">
                   <p id="words">Add a comment:</p>
                   <textarea placeholder="Add a public comment ..."></textarea>
