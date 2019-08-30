@@ -48,7 +48,7 @@ body {
     border-color: gray;
     border-radius: 1px;
     border-style: solid;
-    color: #ffffff;
+    color: #fff;
 }
 
 input:focus {
@@ -89,7 +89,6 @@ input:focus {
     float: left;
     width: 65px;
     height: 28px;
-    border: 0;
     position: relative;
     border: 1px #383838 solid;
     top: 9px;
@@ -174,7 +173,7 @@ input:focus {
     float: left;
     margin-top: 0;
     width: 140px;
-    height: 30px
+    height: 30px;
 }
 
 .vb1 p {
@@ -245,7 +244,7 @@ p {
 }
 
 #views p {
-    color: #aaaaaa;
+    color: #aaa;
 }
 
 .user-panel-x {
@@ -277,15 +276,15 @@ p {
 }
 
 .subscribe-buttom {
-    background-color: #CC0000;
+    background-color: #C00;
     border-radius: 3px;
-    color: #ffffff;
+    color: #fff;
     padding: auto;
     margin: auto 4px;
     white-space: nowrap;
     font-size: 0.9rem;
     font-weight: bold;
-    letter-spacing: .007px;
+    letter-spacing: 0.007px;
     text-transform: uppercase;
     display: flex;
     flex-direction: row;
@@ -350,7 +349,7 @@ textarea {
     background-color: transparent;
     border: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    color: #ffffff;
+    color: #fff;
     margin-top: 10px;
 }
 
