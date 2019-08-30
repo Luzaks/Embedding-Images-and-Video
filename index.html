@@ -1,193 +1,326 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head> <title>YouTube</title>
-      <link rel="stylesheet" href="style.css" type="text/css">
-      <link href="https://fonts.googleapis.com/css?family=Lexend+Mega&display=swap" rel="stylesheet">
-  </head>
-  <body>
-      <nav class="nav-bar">
-          <div class="logo">
-              <img src="https://pbs.twimg.com/profile_images/1148327441527689217/1QpS06D6.png" id="logo-img" alt="Home">
-          </div>
-          <div class="search-bar">
-              <form class="search-form" action="index.html" method="post">
-                  <input type="text" name="search-bar" value="submit" id="search-text">
-                  <button type="submit">
-                      <img src="https://img.icons8.com/cotton/2x/search--v1.png" alt="" id="search-img">
-                  </button>
-              </form>
+<html>
 
-          </div>
-          <div class="rightmost-icons">
-              <img src="https://www.freeiconspng.com/uploads/upload-icon-22.png" alt="">
-              <img src="https://icon-library.net/images/icon-apps-download/icon-apps-download-1.jpg" alt="">
-              <img src="https://www.pinclipart.com/picdir/middle/393-3933336_fb-min-324x3242x-messenger-icon-png-white-clipart.png" alt="">
-          </div>
-      </nav>
+<head>
+    <title>YouTube</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Mega&display=swap" rel="stylesheet">
+</head>
 
-   <main class="video-content">
-     <div id="video">
-        <iframe width="660" height="415" src="https://www.youtube.com/embed/0fKg7e37bQE" class="frameborder" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <p>Github Tutorial For Beginners - Github Basics for Mac or Windows & Source Control Basics</p>
-        <div id="video-bar" class="video-bar">
-        <div class="buttons-x">
-          <div id="views" class="video-buttoms"><p>2.155.562 views</p></div>
-          <div id="like-icon" class="video-buttoms">
-            <img src=" data:image/png;base64,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"   alt="">
-          </div>
+<body>
+    <nav class="nav-bar">
+        <div class="logo">
+            <svg id="logo-img" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false">
+                <g>
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" class="style-scope yt-icon"></path>
+                </g>
+            </svg>
+        </div>
+        <div class="rightmost-icons">
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false">
+                <g>
+                    <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4zM14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2z" class="style-scope yt-icon"></path>
+                </g>
+            </svg>
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false">
+                <g>
+                    <path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z" class="style-scope yt-icon"></path>
+                </g>
+            </svg>
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false">
+                <g>
+                    <path d="M12.04 4C17 4 21 7.7 21 12.3c0 4.57-4 8.28-8.96 8.28-1.76 0-3.4-.47-4.8-1.28-.15-.1-.35-.1-.52-.04-1.58.68-2.8.88-3.45.93-.2 0-.34-.26-.22-.4.6-.9 1.08-1.8 1.43-2.5.1-.2.1-.46-.04-.65C3.58 15.4 3.1 13.9 3.1 12.3c0-4.6 4-8.3 8.94-8.3zm1.6 9.56v1.58c0 .17.22.25.34.13l3.43-3.34c.1-.07.1-.2 0-.27L14 8.32c-.12-.12-.33-.04-.33.13V10c0 .1-.07.18-.17.2-3.38.52-5.04 2.73-5.74 5.1-.06.2.2.34.32.2 1.3-1.42 3.05-2.1 5.4-2.13.1 0 .2.1.2.2z" class="style-scope yt-icon"></path>
+                </g>
+            </svg>
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false">
+                <g>
+                    <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z" class="style-scope yt-icon"></path>
+                </g>
+            </svg>
+            <img src="https://ghidra.re/wp-content/uploads/2019/03/cropped-ghidra3.png" alt="">
+        </div>
+        <div class="search-bar">
+            <form class="search-form" action="index.html" method="post">
+                <input type="text" name="search-bar" id="search-text" placeholder="Search">
+                <div class="searchbutton">
+                    <button class="search-button" type="submit">
+                        <img src="https://img.icons8.com/cotton/2x/search--v1.png" alt="" id="search-img">
+                    </button>
+                </div>
+            </form>
 
-          <div id="dislike" class="video-buttoms">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAflBMVEX///8AAAAhISE/Pz9bW1sKCgqOjo7V1dXi4uKsrKz8/PzCwsL39/e6urq/v7/Y2NjNzc3u7u6Dg4NqampSUlJDQ0Po6Ojx8fGzs7NhYWEZGRmjo6MwMDApKSl8fHxISEicnJxnZ2dzc3N+fn41NTWLi4sTExMdHR2fn58lJSU5og/yAAAKjElEQVR4nO1d53byOhCEUI3ppvkzIfQk7/+CNyQx0ayK5e7VufMrJxZYg+XtWrValWI0Hm8Xm+FgPvf96RcmMb7+jPrLQ7DqXPef7/de+4F/r51VcFged/5sOyp2HpuhEQv7r9oOZ4Opd+zfzt319fPezo5r2J9simC38YJ/FvcLo5n2K8aL2WR3XAbhPgchDU7eMB+/6Zv9zTo7+uPMd8dbeLX5gXIhnIyz8huk/NF7k8enxg9m59V7OXTUOPmZCB7S36l77hQ/fTssUy/X7bWuuWZFOEhFcFH3fLOgm+I5jkuXD+Vgac2wttcpNyxlzq3ueebA2YbgsO5Z5sJ+m8xwVfck/3B/ed131m+rbjfsrtavdnZeosCZlTzrXzwM6W5w6R+jyPN2D3vbn//An+68nT/cqOzr8Wb4ZVEEZkGRpDeoqn8/3/oG3M6fdpTun53upR9N5vPZIr9vMNsdXrW30lvJ3yCjJ8l38w3K5X0VLKOvJ7LIbD3qsdh1NXc1+jsDGLq3+7WlVXO/BkdvPrN46/NhNFGS3Js+c4Shlr/8GD4UbEpnJmCBM/6BSWmcxYGR7W124qdWBcw7FRQcDaofTG7rlwceonGNlILxuU3Q0w8WJdSr/T3EN/Ff/imnxpxS7GuHvgijOvZ3EF/4XrGBIjuMqbTTrj+uDFstEnM56sbxZdhaI0XdMMYMR8hwrhnGmCERNzqdyJlhKxAZvmgGsWa4gYeoCYqzZoi+7VQ9hjdDT2SoUfq8GUIERiNqeDMEhdFVj+HNsNUT5qHxAJgzFB0HjQfwP0MNmsLQ+VUKnriTkga0xUE9hjdD0PhX9Tx4MzyJDNt7pZ/PmyEJZSjDvbwZ0uqRtWIMb4YXwrAdyGN4M5Rzn540hjdD+SHKWRrmDFtLylB6FbkzxBTKAzQ/yJ6hlMSmKQz+DCVxQ4SNAwzpU/zEqy4wbE2RIka/nWBIyi1Q7bvBEDxhkqRxhCHqDFimjjAEHhgbdoXhh8gQaidcYQhJGkhDucIQ4oqQ1HeG4UlkKDoYzjCEMiKxls8ZhpHIUFQXzjD0nGfo/jPsiwzFymhnGELhqZPaQix7v4sXXGEIjv6beMUVhvAa3sQrrjCEvRlQWeMIQ/QPIQflCEPw8ZGHGwyxShHDiW4wBDlD0t0uMsS9CW4wpMkL92yaLWEoFvG5wVBKsgkusCMMaUZfiLa5wnBEtif+bbt0hSF9FcPnBWcYtnyk+Ay3ucOQVC08dxo6xBA3/D5ljUsMIdzWjmflEkPcCBXH21xiiKngj99/OsUQxGnc+cQphqATY1HjFEOQptff/7nFUIxHxfu23WUYFw65xdD5VQqB73j7hVMMIZgRB76dYghbSuOYoksMcVtwHMhwiSH2A4n/6xBDrKR9htvE8EaKNiziiq+jt4kK2PvxGRWGfTX23yZ+KkXTlzJBAorP/0NbAuvGoNBd6i15fAVA97d9fF6AiL/1MoXopH2DxhKhj+tjXkqzSZECOy3Shrt1gG5JEPLcpAXKyaJV1Ih0aUrRHbo00E1songPybWDPzDCl/bh6BrDVAiamYF9Mz6dcGo04D3EvnpCwPsb+n6Elrir71olyGtITJCpet4pUP8yJdKEXtb1W7RGqLpptQC1Lun1sWbi9qiyb6Ia6FZIfVwGmolb46a6abUADSZLhtyvYv0PER0LufNuXpVhaQuVCehPp+gzO8zZ+7+QwydyATbNKF+bfF29K+9hKgFUomJb/hc2gW76KoSkv2bt5jeoRF20YutZ9vZeRwupiXTtwkacjCnsMJxPPDPmv0EscqBCiiBPOQDrs5ivJP0MrFrcl4iX4hkSY9DQ6LYSiFN5L+g7SWikfSnoezMB7LbCRDvt5VunzoBATWEWiNQ8pcawG/za1o3JEyH1Dq9NoqLdmXCWQBpICrSmp0g8wPK+uV2XO4x9oQtVXPIBIDUEpkak8XWxYZWJRFFu1ZQ0wd1h3eleplnPxJgRx6gobRiDasXkY1EI/hIL70E0SG3fLiSPoXAvQKaY5mEsXsiHXwPD4YMS5rJHVMJZDVKcR9UYToNtT5rhA6uLN0jMFoz9i+rTKZeQFTb0JvYmqvEYoM75FvkDxUE845l/PGtC2eVIOomi7e8YqeYoY/+26p6CB8Lu6s0Ypb8m3zQTJPvNMrdvRzAF7iUcUvQD+i6qIyUU+dNCFCWm+qhe1PSAR0jnxeRFqTE/skPOSmUUfPDiv5KTtcQKPyV/ouCzM89lF/ZQKzy5sqPYU+2yHTGbCiSEajiD6Rf5U5d/uFVSmUVexcSUFEing+F0vERcqiqXIHNMOnwRYitfi2w78M4Zzu1d76qrrCOKPymmAQzjfNFo5l069seUv0XVZoXIOk3wYyb6sRt/twyp20FxigalmTBakNO9zcsHRJMyPjYeDiZR/3BarTv7z/dvT+Llul6d+pE/q57cN4gCMAsbWNQW8eTRAwVNNDtIyZRRxoHGb0BFhx1INsM4b7ARmlKImwxighs9RTiXtv71Zwu0T40ao2v9WzQKRCma3ChQLqmjkPUBhY3uxLcHYEXXnWJNASJsDGofHnf1J7ZmB4kvGUbCuNqLHVIAw+yGbB5IpQocvMJANIZ+IIiaBhQb2wPN0w/tOAi2NWRrih2Iu69V5liCzulFJGpf/xDhYVscXd8cEB9DOw4KBhlpxBatHteKU1jODaj6TwF8iNq4G1oHBdZQVIATzF1rdMILW3PhWEoQA1w3DOwfVvqCPkSddYo/RP3V1GmAb6LWrobAYXHlWpUAxanO6gR9kaICoAnAh6ibPJo/vJYpMWx0UQoYxGyZYupbF3aDRHAztk3bA2tJNCsQk/msrG86eZ3ZCYNq37iREphu02QaApufoanAbfJH9SBMBVc5vSIAk9fY31gAwMv6ppXgGhcXtAozfUGej0brg/XNJgcVAwPg6iUI1ndyCUfDkLAH+QcwJqm+oXFA+1utME4WL2tzgZb1UTkGCqlZBYa/AQFDdaYXvJD6d9ymBWp9pZuIErfqCeYHTF/9hOA5MzO+W3SbuLI6AzwoPunuGKgwlBFDMH3YCVNilSk1OrhZx2pnVwTQTVSVLkA0oAGNRFID6rlVsgaybHZ1/s0CehiqaEbST9B0YCJUJWvE67U3L8gC6JmmSqKJke+yNvaUCjROFXs8xQo3ToU1f4ByX8VWjIxdRhsElDWyD8V+lZLtMXIshr2kIXaNHIsRr3LUFi1i10gRKYjUNKCvVhZASYKUfwH+vLL5T5jtMqhv45a6+AW4UEd6FZJU3KLevwDvgdaeoKTlU9IOgDeNrkNoJ8dUWWCCiYajwLvi6B4+MDEwxGhc/Q1fs8HAsLz2OZUCVikGMjDuzy0J/AT4TyBpyF4wdomZGBC4Fy1v0n+RqyQlKu8v+TIkDZBYbUlAgDiJvYeF1DaCWWEbAApPHmbL0FP02WZqsX3jJBIJD3R10uXLEDbNdvjsI1VBatKjALPaS4pkglzttRi0gY0Eq6Y9TYbULouAryZ84mDi1+OsJ2KYDmEImTr2BHMtQfavYAy5UeY3mIYPlVA8xdfIjQUaY4y29r7vgoAhWOzO+177vl9dPuZlt5j5D7tmgzxif22mAAAAAElFTkSuQmCC" alt="">
-          </div>
-          <div id="share-buttom" class="video-buttoms">
-              <form class="" action="index.html" method="post">
-                  <button type="submit">
-                      <img src="https://cdn.shopify.com/s/files/1/0099/9562/products/274_Hero_Social_Sharing_Button_2048x2048.jpg?v=1475281658" alt="" id="share-buttom-img">
-                  </button>
-              </form>
-          </div>
-          </div>
-          <div class="user-panel-x">
-              <div id="user-icon">
-                <img src="https://blog.optimizely.com/wp-content/uploads/2014/10/codecademy-logo-e1413249893959.png" alt="">
-                <div id="Username"><p>LearnCode.academy<br> <ins class="date">Posted on Jan 16 2014.</ins></p></div>
-                <div id="description"><p>Github Tutorial For Beginners - learn Github for Mac or Github for windows
-                    If you've been wanting to learn Github, now's the perfect time!  Github is seen as a big requirement
-                    by most employers these days and is very critical to business workflow.
-                    This Github tutorial will cover the basics of how to use Github and the command line.</p></div>
-
-              </div>
-              <div id="comments">
-                  <p id="words">Add a comment:</p>
-                  <textarea></textarea>
-                  <div class="comment">
-                          <p>Comment</p><br>
-                          <p>Comment</p><br>
-                          <p>Comment</p><br>
-                          <p>Comment</p><br>
-                          <p>Comment</p><br>
-                          <p>Comment</p><br>
-                          <p>Comment</p><br>
-
-                  </div><br>
-                  <div class="comment">
-                          <p>Comment</p><br>
-                          <p>Comment</p><br>
-                          <p>Comment</p><br>
-                          <p>Comment</p><br>
-                          <p>Comment</p><br>
-                          <p>Comment</p><br>
-                          <p>Comment</p><br>
-
-                  </div><br>
-                  <div class="comment">
-                          <p>Comment</p><br>
-                          <p>Comment</p><br>
-                          <p>Comment</p><br>
-                          <p>Comment</p><br>
-                          <p>Comment</p><br>
-                          <p>Comment</p><br>
-                          <p>Comment</p><br>
-
-                  </div><br>
-
-              </div>
-
-
-          <div id="subscribe-buttom">
-              <form class="" action="index.html" method="post">
-                   <button type="submit">
-                       <img src="https://ak2.picdn.net/shutterstock/videos/1016791282/thumb/1.jpg" alt="" id="subscribe-buttom2">
-                   </button>
-               </form>
-          </div>
-
-
-          </div>
         </div>
 
-     </div>
- </main>
+    </nav>
 
-   <aside class="sidebar">
-       <div class="side-element">
-           <iframe class="frameborder" width="150" height="100" src="https://www.youtube.com/embed/0fKg7e37bQE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-           <div class="explenation">
-               <p>Explenation</p><br>
-               <p>Views:xyz</p>
-           </div>
-       </div>
-       <div class="side-element">
-           <iframe class="frameborder" width="150" height="100" src="https://www.youtube.com/embed/0fKg7e37bQE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-           <div class="explenation">
-               <p>Explenation</p><br>
-               <p>Views:xyz</p>
-           </div>
-       </div>
-       <div class="side-element">
-           <iframe class="frameborder" width="150" height="100" src="https://www.youtube.com/embed/0fKg7e37bQE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-           <div class="explenation">
-               <p>Explenation</p><br>
-               <p>Views:xyz</p>
-           </div>
-       </div>
-       <div class="side-element">
-           <iframe class="frameborder" width="150" height="100" src="https://www.youtube.com/embed/0fKg7e37bQE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-           <div class="explenation">
-               <p>Explenation</p><br>
-               <p>Views:xyz</p>
-           </div>
-       </div>
-       <div class="side-element">
-           <iframe class="frameborder" width="150" height="100" src="https://www.youtube.com/embed/0fKg7e37bQE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-           <div class="explenation">
-               <p>Explenation</p><br>
-               <p>Views:xyz</p>
-           </div>
-       </div>
-       <div class="side-element">
-           <iframe class="frameborder" width="150" height="100" src="https://www.youtube.com/embed/0fKg7e37bQE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-           <div class="explenation">
-               <p>Explenation</p><br>
-               <p>Views:xyz</p>
-           </div>
-       </div>
-       <div class="side-element">
-           <iframe class="frameborder" width="150" height="100" src="https://www.youtube.com/embed/0fKg7e37bQE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-           <div class="explenation">
-               <p>Explenation</p><br>
-               <p>Views:xyz</p>
-           </div>
-       </div>
-       <div class="side-element">
-           <iframe class="frameborder" width="150" height="100" src="https://www.youtube.com/embed/0fKg7e37bQE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-           <div class="explenation">
-               <p>Explenation</p><br>
-               <p>Views:xyz</p>
-           </div>
-       </div>
-       <div class="side-element">
-           <iframe class="frameborder" width="150" height="100" src="https://www.youtube.com/embed/0fKg7e37bQE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-           <div class="explenation">
-               <p>Explenation</p><br>
-               <p>Views:xyz</p>
-           </div>
-       </div>
-       <div class="side-element">
-           <iframe class="frameborder" width="150" height="100" src="https://www.youtube.com/embed/0fKg7e37bQE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-           <div class="explenation">
-               <p>Explenation</p><br>
-               <p>Views:xyz</p>
-           </div>
-       </div>
-       <div class="side-element">
-           <iframe class="frameborder" width="150" height="100" src="https://www.youtube.com/embed/0fKg7e37bQE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-           <div class="explenation">
-               <p>Explenation</p><br>
-               <p>Views:xyz</p>
-           </div>
-       </div>
-   </aside>
+    <main class="video-content">
+        <div id="video">
+            <iframe width="875" height="492" src="https://www.youtube.com/embed/0fKg7e37bQE" class="frameborder" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Github Tutorial For Beginners - Github Basics for Mac or Windows & Source Control Basics</p>
+            <div id="video-bar" class="video-bar">
+                <div class="buttons-x">
+                    <div id="views">
+                        <p>2.155.562 views</p>
+                    </div>
+                    <div id="options-buttom" class="video-buttoms">
+                        <button type="submit">
+                            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false">
+                                <g>
+                                    <circle cx="5" cy="12" r="2"></circle>
+                                    <circle cx="12" cy="12" r="2"></circle>
+                                    <circle cx="19" cy="12" r="2"></circle>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="save-buttom" class="video-buttoms">
+                        <button type="submit">
+                            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false">
+                                <g>
+                                    <path d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z"></path>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="share-buttom" class="video-buttoms">
+                        <button type="submit">
+                            <svg viewBox="1 2 24 24" preserveAspectRatio="xMidYMid meet">
+                                <g>
+                                    <path d="M14 9V5l7 7-7 7v-4.1c-5 0-8.5 1.6-11 5.1 1-5 4-10 11-11z"></path>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="dislike" class="video-buttoms">
+                        <button type="button" name="button">
+                            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false">
+                                <g>
+                                    <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="like-icon" class="video-buttoms">
+                        <button type="button" name="button">
+                            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false">
+                                <g>
+                                    <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"></path>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="user-panel-x">
+                    <div class="user-icon">
+                        <img src="https://www.codecademy.com/assets/logo-codecademy-social-abfd8450722d675bddedde689f8af624.png" alt="">
+                        <div id="subscribe-buttom">
+                            <form class="" action="index.html" method="post">
+                                <button class="subscribe-buttom" type="submit">
+                                    <div class="span-in-button">
+                                        <span>Subscribe</span>
+                                        <span>955K</span>
+                                    </div>
+                                </button>
+                            </form>
+                        </div>
+                        <div id="Username">
+                            <p>LearnCode.academy
+                                <br> <ins class="date">Posted on Jan 16 2014.</ins></p>
+                        </div>
+                        <div id="description">
+                            <p>Github Tutorial For Beginners - learn Github for Mac or Github for windows If you've been wanting to learn Github, now's the perfect time! Github is seen as a big requirement by most employers these days and is very critical to business workflow. This Github tutorial will cover the basics of how to use Github and the command line.</p>
+                        </div>
 
-  </body>
+                    </div>
+                    <div class="vb1">
+                        <p>717 Comments</p>
+                    </div>
+                    <div class="vb2">
+                        <div class="video-buttoms vb3">
+                            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false">
+                                <g>
+                                    <path d="M3 18h6v-2H3v2zM3 6v2h18V6H3zm0 7h12v-2H3v2z"></path>
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="video-buttoms vb4">
+                            <p>SORT BY</p>
+                        </div>
+                    </div>
+                    <div id="comments">
+                        <div class="comment-img">
+                            <img class="comment-img" src="https://www.codecademy.com/assets/logo-codecademy-social-abfd8450722d675bddedde689f8af624.png" alt="">
+                        </div>
+                        <textarea placeholder="Here ..." rows="1"></textarea>
+                        <div class="comment">
+                            <div class="comment-img">
+                                <img class="comment-img" src="https://www.codecademy.com/assets/logo-codecademy-social-abfd8450722d675bddedde689f8af624.png" alt="">
+                            </div>
+                            <div class="comments-2">
+                                <p>Comment</p>
+                                <br>
+                                <p>Comment</p>
+                                <br>
+                                <p>Comment</p>
+                                <br>
+                                <p>Comment</p>
+                                <br>
+                                <p>Comment</p>
+                                <br>
+                                <p>Comment</p>
+                                <br>
+                                <p>Comment</p>
+                                <br>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="comment">
+                            <div class="comment-img">
+                                <img class="comment-img" src="https://www.codecademy.com/assets/logo-codecademy-social-abfd8450722d675bddedde689f8af624.png" alt="">
+                            </div>
+                            <div class="comments-2">
+                                <p>Comment</p>
+                                <br>
+                                <p>Comment</p>
+                                <br>
+                                <p>Comment</p>
+                                <br>
+                                <p>Comment</p>
+                                <br>
+                                <p>Comment</p>
+                                <br>
+                                <p>Comment</p>
+                                <br>
+                                <p>Comment</p>
+                                <br>
+                            </div>
+
+                        </div>
+                        <br>
+                        <div class="comment">
+                            <div class="comment-img">
+                                <img class="comment-img" src="https://www.codecademy.com/assets/logo-codecademy-social-abfd8450722d675bddedde689f8af624.png" alt="">
+                            </div>
+                            <div class="comments-2">
+                                <p>Comment</p>
+                                <br>
+                                <p>Comment</p>
+                                <br>
+                                <p>Comment</p>
+                                <br>
+                                <p>Comment</p>
+                                <br>
+                                <p>Comment</p>
+                                <br>
+                                <p>Comment</p>
+                                <br>
+                                <p>Comment</p>
+                                <br>
+                            </div>
+
+                        </div>
+                        <br>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <aside class="sidebar">
+        <div class="side-element">
+            <iframe class="frameborder" width="150" height="100" src="https://www.youtube.com/embed/0fKg7e37bQE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="explenation">
+                <p>Explenation</p>
+                <br>
+                <p>Views:xyz</p>
+            </div>
+        </div>
+        <div class="side-element">
+            <iframe class="frameborder" width="150" height="100" src="https://www.youtube.com/embed/0fKg7e37bQE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="explenation">
+                <p>Explenation</p>
+                <br>
+                <p>Views:xyz</p>
+            </div>
+        </div>
+        <div class="side-element">
+            <iframe class="frameborder" width="150" height="100" src="https://www.youtube.com/embed/0fKg7e37bQE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="explenation">
+                <p>Explenation</p>
+                <br>
+                <p>Views:xyz</p>
+            </div>
+        </div>
+        <div class="side-element">
+            <iframe class="frameborder" width="150" height="100" src="https://www.youtube.com/embed/0fKg7e37bQE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="explenation">
+                <p>Explenation</p>
+                <br>
+                <p>Views:xyz</p>
+            </div>
+        </div>
+        <div class="side-element">
+            <iframe class="frameborder" width="150" height="100" src="https://www.youtube.com/embed/0fKg7e37bQE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="explenation">
+                <p>Explenation</p>
+                <br>
+                <p>Views:xyz</p>
+            </div>
+        </div>
+        <div class="side-element">
+            <iframe class="frameborder" width="150" height="100" src="https://www.youtube.com/embed/0fKg7e37bQE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="explenation">
+                <p>Explenation</p>
+                <br>
+                <p>Views:xyz</p>
+            </div>
+        </div>
+        <div class="side-element">
+            <iframe class="frameborder" width="150" height="100" src="https://www.youtube.com/embed/0fKg7e37bQE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="explenation">
+                <p>Explenation</p>
+                <br>
+                <p>Views:xyz</p>
+            </div>
+        </div>
+        <div class="side-element">
+            <iframe class="frameborder" width="150" height="100" src="https://www.youtube.com/embed/0fKg7e37bQE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="explenation">
+                <p>Explenation</p>
+                <br>
+                <p>Views:xyz</p>
+            </div>
+        </div>
+        <div class="side-element">
+            <iframe class="frameborder" width="150" height="100" src="https://www.youtube.com/embed/0fKg7e37bQE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="explenation">
+                <p>Explenation</p>
+                <br>
+                <p>Views:xyz</p>
+            </div>
+        </div>
+        <div class="side-element">
+            <iframe class="frameborder" width="150" height="100" src="https://www.youtube.com/embed/0fKg7e37bQE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="explenation">
+                <p>Explenation</p>
+                <br>
+                <p>Views:xyz</p>
+            </div>
+        </div>
+        <div class="side-element">
+            <iframe class="frameborder" width="150" height="100" src="https://www.youtube.com/embed/0fKg7e37bQE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="explenation">
+                <p>Explenation</p>
+                <br>
+                <p>Views:xyz</p>
+            </div>
+        </div>
+    </aside>
+
+</body>
+
 </html>
